@@ -1,0 +1,168 @@
+<section class="section-wrap pt-3 pb-3 bg-color">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="title-row">
+            <h2 class="section-title">WE BELIEVE THEM</h2>
+          </div>
+
+          <div id="owl-suppliers" class="owl-carousel owl-theme owl-carousel--arrows-outside owl-carousel--dark-arrows">
+
+            <div class="cardcategories" *ngFor="let supplier of suppliers; let i = index">
+                <article class="entry card box-shadow hover-up">
+                    <div class="entry__img-holder card__img-holder">
+                       <div class="entry__body card__body">                    
+                        <h4 class="entry__title">
+                          <a href="single-post.html">{{supplier.companyname}}</a>
+                        </h4>
+                        <ul class="entry__meta">
+                          <li class="entry__meta-category">
+                            <i class="ui-category"></i>
+                            <a href="#">{{supplier.owner}}</a>
+                          </li>
+                          <li class="entry__meta-comments">
+                            <i class="ui-comments"></i>
+                            <a href="#">{{supplier.contactnumber}}</a>
+                          </li>
+                        </ul>                     
+                        <div class="entry__excerpt">
+                          <p>Location : {{supplier.location}}</p>
+                          <p>District : {{supplier.district}}</p>
+                          <p>Experience : {{supplier.experience}}</p>
+                          <p>Services : {{supplier.Services}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+            </div>
+            <!-- <div class="">
+                <article class="entry card card--small box-shadow hover-up">
+                    <div class="entry__img-holder card__img-holder">
+                      <a href="single-post.html">
+                        <img src="assets/img/blog/post_4.jpg" class="entry__img" alt="">
+                      </a>
+                      <div class="entry__body card__body">
+                        <h4 class="entry__title">
+                          <a href="single-post.html">Using Technology to Maximize Efficiency</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </article>
+            </div> -->
+
+           
+
+            
+
+           
+
+          </div> <!-- end owl-carousel -->
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-3">
+        <a href="#" class="btn btn--lg btn--color btn--icon">
+            <span>MORE SUPPLIERS</span>
+            <i class="ui-arrow-right"></i>
+          </a>           
+      </div>
+  </section> <!-- end testimonials -->
+
+<!-- 
+<section class="section-wrap pb-72 pb-lg-40">
+  <div class="">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="title-row">
+          <h2 class="section-title text-center">
+           <span class="highlight">CATEGORIES</span>
+          </h2>
+        </div>              
+      </div>            
+    </div>          
+     <div class="row">
+      <div class="column">
+          <div class="imagecontainer">
+              <img src="assets/img/categories/1.jpg" alt="Snow" style="width:100%;">
+              <div class="bottom-left btn--color btn--sm btn">INTERLOCKING STONE</div>
+            </div>
+            <div class="imagecontainer">
+                <img src="assets/img/categories/2.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left btn--color btn--sm btn">RAILINGS</div>
+            </div> 
+      </div>
+      <div class="column">
+        <div class="imagecontainer">
+          <img src="assets/img/categories/3.jpg" alt="Snow" style="width:100%;">
+          <div class="bottom-left btn--color btn--sm btn">KITCHEN DESIGN</div>
+        </div>
+        <div class="imagecontainer">
+            <img src="assets/img/categories/4.jpg" alt="Snow" style="width:100%;">
+            <div class="bottom-left btn--color btn--sm btn">GENERAL CONTRACTORS</div>
+        </div>
+      </div>  
+      <div class="column">
+          <div class="imagecontainer">
+              <img src="assets/img/categories/5.jpg" alt="Snow" style="width:100%;">
+              <div class="bottom-left btn--color btn--sm btn">HEATING & AIR CONDITIONING</div>
+            </div>
+            <div class="imagecontainer">
+                <img src="assets/img/categories/6.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left btn--color btn--sm btn">GUTTERS</div>
+            </div>
+      </div>
+      <div class="column">
+          <div class="imagecontainer">
+              <img src="assets/img/categories/7.jpg" alt="Snow" style="width:100%;">
+              <div class="bottom-left btn--color btn--sm btn">PLUMBING</div>
+            </div>
+            <div class="imagecontainer">
+                <img src="assets/img/categories/8.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left btn--color btn--sm btn">
+                  PEST & ANIMAL CONTROL
+                </div>
+            </div>
+      </div>
+    </div> 
+     
+        <div class="row" >
+          <div class="col-md-4 categoryBlock" *ngFor="let category of productCategories; let i = index">
+            <div class="thumbnail">
+              <a href="/w3images/lights.jpg" target="_blank">
+                <img src="assets/img/categories/{{i+1}}.jpg" alt="Lights" style="width:100%">
+                <div class="bottom-left btn--color btn--sm btn">
+                  {{category.Product_Description}}
+                </div>
+              </a>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="/w3images/nature.jpg" target="_blank">
+                <img src="assets/img/categories/8.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="/w3images/fjords.jpg" target="_blank">
+                <img src="assets/img/categories/8.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+              </a>
+            </div>
+          </div> 
+        </div>
+
+        <div class="row justify-content-center pt-3">
+          <a href="#" class="btn btn--lg btn--color btn--icon">
+              <span>VIEW MORE</span>
+              <i class="ui-arrow-right"></i>
+            </a>           
+        </div>
+  </div>        
+</section> -->
