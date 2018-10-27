@@ -4,9 +4,9 @@ import { IndexComponent } from './modules/index/index.component';
 import { CategoryComponent } from './modules/category/category.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: IndexComponent },
-  { path: 'services', component: CategoryComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: 'services', component: CategoryComponent}
 ];
 
 @NgModule({
