@@ -15,6 +15,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { DialogContentExampleDialog } from './components/dialog/dialog.component';
+import { DynamicFormModule } from './modules/dynamicForm/dynamicform.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DialogContentExampleDialog } from './components/dialog/dialog.component
     CategoriesComponent,
     ClientTestimonialsComponent,
     SuppliersComponent,
-    CategoryComponent
+    CategoryComponent,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -34,9 +36,10 @@ import { DialogContentExampleDialog } from './components/dialog/dialog.component
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    DynamicFormModule
   ],
-  providers: [DialogContentExampleDialog],
+  entryComponents: [DialogContentExampleDialog],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

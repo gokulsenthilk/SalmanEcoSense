@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material';
-import { DialogContentExampleDialog } from 'src/app/components/dialog/dialog.component';
+import { DialogContentExampleDialog } from '../../components/dialog/dialog.component';
 
 @Component({
   selector: 'app-index',
@@ -10,7 +10,7 @@ import { DialogContentExampleDialog } from 'src/app/components/dialog/dialog.com
 })
 export class IndexComponent implements OnInit {
 serviceForm: FormGroup;
-  constructor(public dialog: MatDialog, public DialogContentExampleDialog: DialogContentExampleDialog) { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
     this.serviceForm = new FormGroup({
