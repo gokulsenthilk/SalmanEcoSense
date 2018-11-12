@@ -442,7 +442,7 @@ address {
 input,
 select,
 textarea {
-	height: 46px;
+	height: auto;
 	border-radius: 5px;
 	border: 1px solid #E8ECED;
 	background-color: #F7F9FA;
@@ -470,7 +470,7 @@ input[type=search] {
 input:focus,
 textarea:focus {
 	border-color: #FA6262;
-	background-color: #fff;
+	background-color: transparent;
 	outline: none;
 	box-shadow: none; }
 
@@ -1561,7 +1561,8 @@ background-position:center; }
 	.optin .form-group {
 		flex: 1 0 0;
 		margin-right: 20px;
-		margin-bottom: 20px; }
+		/*  margin-bottom: 20px;  */
+	} 
 	.optin__label {
 		position: absolute;
 		font-weight: 500;
@@ -3518,3 +3519,24 @@ background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* W3C, IE 10+/ Edge, F
 	border-bottom: 1px solid #E8ECED; }
 
 /*# sourceMappingURL=style.css.map */
+/*  Material styles */
+.example-container {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .example-container > * {
+	width: 100%;
+  }
+  mat-form-field {
+	  width: 100%;
+  }
+  .mat-form-field {
+	font-size: 15px !important;
+}
+  .mat-form-field-label {
+    color: #333b69 !important;
+}
+button .true {
+	cursor: not-allowed;
+}

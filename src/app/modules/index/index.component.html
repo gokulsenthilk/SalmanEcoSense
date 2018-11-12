@@ -42,16 +42,22 @@
               <!-- Optin Form -->
               <div class="optin">
                <!-- <h3 class="optin__title">Get the free checklist, 7 ways to improve your business</h3> -->
-                <form class="optin__form">
+                <form [formGroup]="serviceForm" class="optin__form" (ngSubmit)="openDialog()" novalidate>
                   <div class="optin__form-group form-group">                    
-                    <input type="text" class="form-input optin__input" id="optin-name" required>
-                    <label for="optin-name" class="optin__label">What service/product do you need?</label>
-                    <span class="input-underline"></span>
+                    <mat-form-field>
+                      <input matInput  [errorStateMatcher]="matcher" formControlName="service" placeholder="What service/product do you need?">
+                      <mat-error *ngIf="serviceForm.controls['service'].hasError('required')">
+                        Please enter a <strong>Service/Product</strong>
+                      </mat-error>
+                    </mat-form-field>
                   </div>
                   <div class="optin__form-group form-group">
-                    <input type="email" class="form-input optin__input" id="optin-email" required>
-                    <label for="optin-email" class="optin__label">Where do you need it?</label>
-                    <span class="input-underline"></span>
+                    <mat-form-field>
+                      <input matInput  formControlName="location" placeholder="Where do you need it?">
+                      <mat-error *ngIf="serviceForm.controls['location'].hasError('required')">
+                        Please enter a <strong>Location</strong>
+                      </mat-error>
+                    </mat-form-field>
                   </div>
                   
                   <button class="optin__btn btn btn--md btn--color btn--button">Go</button>                 

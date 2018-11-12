@@ -1,0 +1,146 @@
+[
+    {
+        "category_question": {
+            "id": 601,
+            "display_as": "Type of planning:",
+            "input_type": "Checkbox",
+            "question": "What type of wedding planning is required?",
+            "rank": 0,
+            "is_attachments_allowed": false,
+            "answers": [
+                {
+                    "id": 2083,
+                    "answer": "Reception",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2084,
+                    "answer": "Ceremony",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2085,
+                    "answer": "Venue",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2086,
+                    "answer": "Decorator and florist",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2087,
+                    "answer": "Caterer",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2088,
+                    "answer": "Photographer / videographer",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2089,
+                    "answer": "Celebrant",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2090,
+                    "answer": "Other",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                }
+            ]
+        }
+    },
+    {
+        "category_question": {
+            "id": 602,
+            "display_as": "Number of guests:",
+            "input_type": "Radio",
+            "question": "How many guests are you expecting?",
+            "rank": 0,
+            "is_attachments_allowed": false,
+            "answers": [
+                {
+                    "id": 2091,
+                    "answer": "Less than 20",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2092,
+                    "answer": "20 - 50",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2093,
+                    "answer": "50 - 100",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2094,
+                    "answer": "100 - 150",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2095,
+                    "answer": "More than 150",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                }
+            ]
+        }
+    },
+    {
+        "category_question": {
+            "id": 603,
+            "display_as": "Budget:",
+            "input_type": "Radio",
+            "question": "What is your budget?",
+            "rank": 0,
+            "is_attachments_allowed": false,
+            "answers": [
+                {
+                    "id": 2096,
+                    "answer": "0 - $500",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2097,
+                    "answer": "$500 - $2,000",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2098,
+                    "answer": "$2,000 - $5,000",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2099,
+                    "answer": "$5,000+",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                },
+                {
+                    "id": 2100,
+                    "answer": "Not sure",
+                    "next_category_question_id": null,
+                    "service_type_id": null
+                }
+            ]
+        }
+    }
+]
