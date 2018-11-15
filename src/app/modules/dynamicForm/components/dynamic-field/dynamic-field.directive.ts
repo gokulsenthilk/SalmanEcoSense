@@ -39,6 +39,7 @@ export class DynamicFieldDirective implements OnInit {
       componentMapper[this.field.type]
     );
     this.componentRef = this.container.createComponent(factory);
+    this.componentRef.instance.class = 'tab';
     this.componentRef.instance.field = this.field;
     this.componentRef.instance.group = this.group;
   }

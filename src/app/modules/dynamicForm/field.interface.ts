@@ -6,6 +6,7 @@ export interface Validator {
 export interface FieldConfig {
   label?: string;
   name?: string;
+  display_as?: string,
   inputType?: string;
   options?: string[];
   collections?: any;
